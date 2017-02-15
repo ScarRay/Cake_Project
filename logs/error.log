@@ -1523,3 +1523,52 @@ Stack Trace:
 #13 {main}
 
 
+2017-02-15 15:01:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Cake_project could not be found.
+Exception Attributes: array (
+  'class' => 'Cake_project',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /Cake_project/
+Stack Trace:
+#0 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-02-15 15:02:15 Error: [Cake\View\Exception\MissingTemplateException] Template file "Cake_project\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Cake_project\\index.ctp',
+)
+Request URL: /Cake_project/
+Stack Trace:
+#0 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName(NULL)
+#1 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Cake_ProjectController))
+#4 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 Z:\windoZ\Logiciels\wamp64\www\Cake_Project\webroot\index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
